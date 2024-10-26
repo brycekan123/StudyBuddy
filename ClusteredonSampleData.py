@@ -8,7 +8,6 @@ csv_file_path = '/Users/brycekan/Downloads/StudyBuddyApplication/testSampleData.
 data = pd.read_csv(csv_file_path)
 # Display the original data
 print("Original Data:")
-#print(data)
 unmatched_group = []
 result_list = []
 ##GROUP2
