@@ -14,21 +14,27 @@ def exactMatch(group_pref_2,result_list):
 
 
 def checkMatchConditions(group_pref,index_to_delete,templist,groupsize):
+    #Match
     if index_to_delete != -1 and len(templist)< groupsize:
-        # print("inside group")
-        # print(group_pref)
-        # print(group_pref.iloc[index_to_delete]['Email'])
         templist.append(group_pref.iloc[index_to_delete]['Email'])
         group_pref = group_pref.drop([index_to_delete]).reset_index(drop=True)
+    
     return group_pref, templist
 
 def finishGroup(group_pref,index_to_delete,result_list,templist,groupsize,unmatched_group,first_row,selected_day):
+    #Group 2 checkMatch will always lead to finishGroup
+    #Group 3 will skip finishGroup until 3rd row is Found. len(templist) ==2 when 2nd row is found. len(templist) == 3 will trigger grouping
     if index_to_delete != -1 and len(templist)== groupsize:
         result_list.append([templist,selected_day])
         group_pref = group_pref.drop([0]).reset_index(drop=True)
         selected_day = ""  
         templist = []
-    else:
+    if index_to_delete == -1:
         group_pref = group_pref.drop([0]).reset_index(drop=True)
         unmatched_group.append(first_row['Email'])
     return group_pref,result_list,unmatched_group,templist,selected_day
+
+def resultInfo(result_list,unmatched_group):
+    print("PAIRS",result_list)
+    print(len(result_list))
+    print("UNMATCHED",unmatched_group)
