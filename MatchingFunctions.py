@@ -21,16 +21,20 @@ def checkMatchConditions(group_pref,index_to_delete,templist,groupsize):
     
     return group_pref, templist
 
-def finishGroup(group_pref,index_to_delete,result_list,templist,groupsize,unmatched_group,first_row,selected_day):
+def finishGroup(group_pref,index_to_delete,result_list,templist,groupsize,unmatched_group,first_row,selected_day,definiteMatch):
     #Group 2 checkMatch will always lead to finishGroup
     #Group 3 will skip finishGroup until 3rd row is Found. len(templist) ==2 when 2nd row is found. len(templist) == 3 will trigger grouping
     if index_to_delete != -1 and len(templist)== groupsize:
-        result_list.append([templist,selected_day])
+        print("in matching",templist,definiteMatch)
+        result_list.append([templist,definiteMatch])
+        print("RESULT",result_list)
         group_pref = group_pref.drop([0]).reset_index(drop=True)
         selected_day = ""  
         templist = []
     if index_to_delete == -1:
         group_pref = group_pref.drop([0]).reset_index(drop=True)
+        #if no match... definite match might need to be rest
+        definiteMatch=[]
         unmatched_group.append(first_row['Email'])
     return group_pref,result_list,unmatched_group,templist,selected_day
 
