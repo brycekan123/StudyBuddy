@@ -11,7 +11,7 @@ print("Original Data:")
 #print(data)
 unmatched_group = []
 result_list = []
-
+##GROUP2
 group_pref_2 = data.loc[(data["Group Size Preference"] == 2)].copy()
 
 result_list = []
@@ -66,7 +66,10 @@ print("#ofmatches",len(result_list))
 
 print("UNMATCHED",unmatched_group)
 
+#GROUP3 MATCH DOESN'T WORK
 # group_pref_3  = data.loc[(data["Group Size Preference"] == 3)].copy()
+# group_pref_3.reset_index(drop=True, inplace=True)
+# print(group_pref_3)
 # templist = []
 # selected_day = ""  
 # while len(group_pref_3) > 0:
@@ -96,7 +99,12 @@ print("UNMATCHED",unmatched_group)
 #                 index_to_delete = i
                 
 #     # HAVE FOUND A MATCH. deleting current row
-#     group_pref_3,templist= MatchingFunctions.checkMatchConditions(group_pref_3,index_to_delete,templist,3)
+#     if index_to_delete != -1 and len(templist)< 3:
+#         # print("inside group")
+#         print(group_pref_3)
+#         print(group_pref_3.iloc[index_to_delete]['Email'],index_to_delete)
+#         templist.append(group_pref_3.iloc[index_to_delete]['Email'])
+#         group_pref_3 = group_pref_3.drop([index_to_delete]).reset_index(drop=True)
 
 #     ## 2 MATCHES FOUND. now deleting first row, move on to next "first iteration"
 #     if index_to_delete != -1 and len(templist)== 3:
