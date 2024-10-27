@@ -10,7 +10,7 @@ data = pd.read_csv(csv_file_path)
 print("Original Data:")
 unmatched_group = []
 result_list = []
-##GROUP2
+#GROUP2
 group_pref_2 = data.loc[(data["Group Size Preference"] == 2)].copy()
 
 group_pref_2 = MatchingFunctions.exactMatch(group_pref_2,result_list)
