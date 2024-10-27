@@ -88,3 +88,9 @@ def find_best_day(group_df):
         return selected_day
 
     return None  # Return None if no best days were found
+
+def getInfo(result_list,unmatched_group):
+    print("RESULT LIST: ", result_list)
+    print("LENGTH OF RESULT: ", len(result_list))
+    print("UNMATCHED LIST: ",unmatched_group)
+    print("LENGTH OF UNMATCHED: ", len(unmatched_group))
