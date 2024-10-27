@@ -26,12 +26,14 @@ michael.jordan@usc.edu,3,Monday; Thursday,JavaScript,Web Development
 emily.king@usc.edu,3,Tuesday; Friday,JavaScript,Web Development
 joseph.brown@usc.edu,3,Wednesday; Friday,Python,Algorithms
 oliver.jones@usc.edu,3,Monday; Thursday,Java,Algorithms
-victoria.hill@usc.edu,3,Monday; Wednesday,C++,Systems Design
+victoria.hill@usc.edu,3,Monday; Wednesday,Java,Systems Design
 ethan.scott@usc.edu,3,Tuesday; Thursday,C++,Systems Design
 sophie.clark@usc.edu,3,Monday; Friday,Java,Algorithms
 rachel.adams@usc.edu,3,Tuesday; Thursday,Python,Machine Learning
 david.moore@usc.edu,3,Monday; Friday,JavaScript,Web Development
 grace.taylor@usc.edu,3,Wednesday; Friday,Java,Data Structures
+monday.guy@usc.edu,3,Monday,Java,Data Structures
+
 isaac.hughes@usc.edu,3,Tuesday; Thursday,C++,Systems Design
 ava.morris@usc.edu,3,Tuesday; Friday,Python,Data Science
 abc.fea@usc.edu,3,Saturday; Friday,Python,Data Science
