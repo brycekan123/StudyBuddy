@@ -12,7 +12,7 @@ def exactMatch(group_pref_2,result_list):
             result_list.append([listofemails,key])
     return group_pref_2
 
-
+#We have found a match. Now, I add the email of the desired individual and drop them from the gruop. 
 def checkMatchConditions(group_pref,index_to_delete,templist,groupsize):
     #Match
     print("in matchConditions")
@@ -23,9 +23,10 @@ def checkMatchConditions(group_pref,index_to_delete,templist,groupsize):
         print("TEMPLIST",templist)
 
     return group_pref, templist
+#templist is to store the people that are about to be in a group
 
 def finishGroup(group_pref,index_to_delete,result_list,templist,groupsize,unmatched_group,first_row,selected_day,definiteMatch):
-    #Group 2 checkMatch will always lead to finishGroup
+    #Group 2 checkMatch will always lead to finishGroup because length of tempList will hit 2.
     #Group 3 will skip finishGroup until 3rd row is Found. len(templist) ==2 when 2nd row is found. len(templist) == 3 will trigger grouping
     print(group_pref)
 
@@ -35,12 +36,14 @@ def finishGroup(group_pref,index_to_delete,result_list,templist,groupsize,unmatc
         #print("RESULT",result_list)
         group_pref = group_pref.drop([0]).reset_index(drop=True)
         print("after drop",group_pref)
+        #resetting for next iteration
         selected_day = ""  
         templist = []
+    #this is the unmatched group
     if index_to_delete == -1:
         print("umatched",first_row['Email'], "going to be dropped")
         print("UNMATCHING",group_pref)
-
+        #dropping first row since there's no matches. Moving onto the next iteration
         group_pref = group_pref.drop([0]).reset_index(drop=True)
         print(group_pref)
         print("TEMPLIST",templist)
