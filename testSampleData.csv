@@ -1,24 +1,56 @@
 Email,Group Size Preference,Availability,Preferred Language,Completed Class
-ethan.green@usc.edu,2,Monday; Wednesday,Python,Machine Learning
-sophie.white@usc.edu,2,Tuesday; Thursday,Java,Web Development
-jackson.hall@usc.edu,2,Wednesday; Friday,C++,Algorithms
-amelia.brown@usc.edu,2,Monday; Friday,JavaScript,Systems Design
-lucas.smith@usc.edu,2,Tuesday; Friday,Python,Data Structures
-zoe.hill@usc.edu,2,Wednesday; Thursday,Java,Data Science
-lily.adams@usc.edu,2,Monday; Tuesday,C++,Web Development
-logan.scott@usc.edu,2,Tuesday; Friday,JavaScript,Machine Learning
-mia.walker@usc.edu,2,Monday; Thursday,Python,Algorithms
-ava.baker@usc.edu,2,Wednesday; Friday,Java,Data Science
-liam.morgan@usc.edu,2,Tuesday; Thursday,C++,Systems Design
-scarlett.clark@usc.edu,2,Monday; Wednesday,JavaScript,Data Structures
-ryan.johnson@usc.edu,2,Wednesday; Friday,Python,Algorithms
-grace.thompson@usc.edu,2,Monday; Friday,Java,Web Development
-nathaniel.evans@usc.edu,2,Tuesday; Thursday,C++,Data Structures
-maya.collins@usc.edu,2,Monday; Thursday,Python,Systems Design
-henry.barnes@usc.edu,2,Tuesday; Friday,JavaScript,Machine Learning
-ella.carter@usc.edu,2,Wednesday; Friday,Java,Algorithms
-alex.morris@usc.edu,2,Monday; Tuesday,C++,Data Science
-audrey.lewis@usc.edu,2,Tuesday; Thursday,Python,Machine Learning
+amanda.jones@usc.edu,2,Monday; Wednesday,Java,Data Structures
+lucy.williams@usc.edu,2,Tuesday; Thursday,C++,Data Science
+benjamin.miller@usc.edu,2,Monday; Friday,Python,Machine Learning
+emily.white@usc.edu,2,Tuesday; Friday,JavaScript,Web Development
+nathan.moore@usc.edu,2,Monday; Wednesday,C++,Systems Design
+lily.baker@usc.edu,2,Wednesday; Friday,Java,Algorithms
+oliver.harris@usc.edu,2,Tuesday; Thursday,Python,Data Structures
+grace.walker@usc.edu,2,Monday; Thursday,JavaScript,Data Science
+jake.davis@usc.edu,2,Wednesday; Friday,C++,Web Development
+mia.hall@usc.edu,2,Monday; Tuesday,Python,Systems Design
+matthew.smith@usc.edu,2,Tuesday; Friday,Java,Machine Learning
+sofia.clark@usc.edu,2,Monday; Thursday,C++,Data Science
+david.green@usc.edu,2,Wednesday; Friday,JavaScript,Algorithms
+zoe.morris@usc.edu,2,Monday; Friday,Python,Web Development
+aiden.jones@usc.edu,2,Tuesday; Thursday,C++,Algorithms
+hannah.moore@usc.edu,2,Monday; Wednesday,Java,Web Development
+lucas.taylor@usc.edu,2,Tuesday; Friday,Python,Data Structures
+ella.hughes@usc.edu,2,Wednesday; Friday,C++,Machine Learning
+charlotte.king@usc.edu,2,Monday; Thursday,Java,Data Science
+jack.brown@usc.edu,2,Tuesday; Friday,Python,Data Science
+lily.adams@usc.edu,2,Monday; Wednesday,C++,Systems Design
+emma.smith@usc.edu,2,Wednesday; Friday,JavaScript,Data Structures
+lucy.williams@usc.edu,2,Tuesday; Thursday,Python,Machine Learning
+thomas.morris@usc.edu,2,Monday; Friday,C++,Data Structures
+isabella.smith@usc.edu,2,Tuesday; Thursday,Java,Algorithms
+olivia.davis@usc.edu,2,Monday; Wednesday,Python,Systems Design
+noah.martin@usc.edu,2,Tuesday; Friday,JavaScript,Algorithms
+elizabeth.brown@usc.edu,2,Monday; Thursday,C++,Data Science
+george.smith@usc.edu,2,Wednesday; Friday,Python,Machine Learning
+evan.harris@usc.edu,2,Monday; Friday,Java,Web Development
+riley.clark@usc.edu,2,Tuesday; Thursday,JavaScript,Data Structures
+alex.baker@usc.edu,2,Monday; Wednesday,Python,Algorithms
+madison.jones@usc.edu,2,Tuesday; Friday,C++,Systems Design
+julia.moore@usc.edu,2,Monday; Thursday,Python,Web Development
+mason.hall@usc.edu,2,Tuesday; Thursday,Java,Machine Learning
+hannah.king@usc.edu,2,Monday; Wednesday,C++,Algorithms
+isla.williams@usc.edu,2,Tuesday; Friday,Python,Web Development
+layla.adams@usc.edu,2,Monday; Thursday,JavaScript,Data Science
+riley.green@usc.edu,2,Tuesday; Friday,C++,Web Development
+jackson.morris@usc.edu,2,Monday; Wednesday,Python,Data Structures
+eliza.walker@usc.edu,2,Tuesday; Thursday,Java,Systems Design
+lucas.brown@usc.edu,2,Monday; Friday,Python,Data Science
+max.williams@usc.edu,2,Tuesday; Friday,C++,Data Science
+sophia.baker@usc.edu,2,Wednesday; Friday,JavaScript,Machine Learning
+henry.brown@usc.edu,2,Monday; Thursday,Python,Algorithms
+emma.davis@usc.edu,2,Tuesday; Thursday,Java,Data Structures
+grace.walker@usc.edu,2,Wednesday; Friday,C++,Web Development
+ella.king@usc.edu,2,Monday; Tuesday,Python,Data Science
+charlotte.adams@usc.edu,2,Tuesday; Friday,JavaScript,Algorithms
+riley.smith@usc.edu,2,Monday; Thursday,Python,Machine Learning
+ava.king@usc.edu,2,Tuesday; Friday,C++,Systems Design
+lucas.walker@usc.edu,2,Monday; Wednesday,Python,Web Development
 hannah.james@usc.edu,3,Monday; Wednesday,Python,Data Science
 liam.martinez@usc.edu,3,Tuesday; Thursday,Python,Data Science
 sophia.evans@usc.edu,3,Wednesday; Friday,Python,Machine Learning
@@ -33,10 +65,21 @@ rachel.adams@usc.edu,3,Tuesday; Thursday,Python,Machine Learning
 david.moore@usc.edu,3,Monday; Friday,JavaScript,Web Development
 grace.taylor@usc.edu,3,Wednesday; Friday,Java,Data Structures
 monday.guy@usc.edu,3,Monday,Java,Data Structures
-
 isaac.hughes@usc.edu,3,Tuesday; Thursday,C++,Systems Design
 ava.morris@usc.edu,3,Tuesday; Friday,Python,Data Science
 abc.fea@usc.edu,3,Saturday; Friday,Python,Data Science
 alphabetso.up@usc.edu,3,Saturday; Friday,Python,Data Science
 feafew.up@usc.edu,3,Sunday; Friday,Python,Data Science
 wassss.up@usc.edu,3,Sunday; Friday,Python,Data Science
+harry.williams@usc.edu,3,Monday; Wednesday,Java,Web Development
+olga.morris@usc.edu,3,Tuesday; Thursday,JavaScript,Data Science
+jackie.smith@usc.edu,3,Monday; Friday,Python,Machine Learning
+emilia.king@usc.edu,3,Tuesday; Thursday,C++,Data Structures
+olivia.walker@usc.edu,3,Wednesday; Friday,Java,Data Science
+john.martinez@usc.edu,3,Monday; Thursday,C++,Algorithms
+gracie.moore@usc.edu,3,Tuesday; Friday,Python,Algorithms
+lucas.taylor@usc.edu,3,Monday; Wednesday,Java,Data Science
+sofia.martin@usc.edu,3,Tuesday; Thursday,Python,Web Development
+david.adams@usc.edu,3,Wednesday; Friday,C++,Systems Design
+peter.brown@usc.edu,3,Monday; Friday,Java,Data Structures
+ella.green@usc.edu,3,Tuesday; Friday,Python,Machine Learning
