@@ -13,47 +13,6 @@ def exactMatch(group_pref_2,result_list):
             result_list.append([listofemails,key])
     return group_pref_2
 
-#We have found a match. Now, I add the email of the desired individual and drop them from the gruop. 
-def checkMatchConditions(group_pref,index_to_delete,pairedlist,groupsize):
-    #Match
-    #Adding the ideal pair to the pairedList. 
-    #dropping the candidate from the dataframe
-    if index_to_delete != -1 and len(pairedlist)< groupsize:
-        print("FoundMatch, templist < groupsize")
-        pairedlist.append(group_pref.iloc[index_to_delete]['Email'])
-        group_pref = group_pref.drop([index_to_delete]).reset_index(drop=True)
-        print("PairedList: ",pairedlist)
-
-    return group_pref, pairedlist
-#templist is to store the people that are about to be in a group
-
-def finishGroup(group_pref,index_to_delete,result_list,pairedlist,groupsize,unmatched_group,first_row,selected_day,definiteMatch):
-    #Group 2 checkMatch will always lead to finishGroup because length of tempList will hit 2.
-    #Group 3 will skip finishGroup until 3rd row is Found. len(templist) ==2 when 2nd row is found. len(templist) == 3 will trigger grouping
-    if index_to_delete != -1 and len(pairedlist)== groupsize:
-        print("Match made: ",pairedlist,definiteMatch)
-        result_list.append([pairedlist,definiteMatch])
-        #print("RESULT",result_list)
-        group_pref = group_pref.drop([0]).reset_index(drop=True)
-        #resetting for next iteration
-        selected_day = "" 
-        pairedlist = []
-    #this is the unmatched group
-    if index_to_delete == -1:
-        print(first_row['Email'], "is unmatched. Dropping from dataframe")
-        #dropping first row since there's no matches. Moving onto the next iteration
-        group_pref = group_pref.drop([0]).reset_index(drop=True)
-        print("Resetting pairedLists",pairedlist)
-        #if no match... definite match might need to be rest
-        definiteMatch=[]
-        #extend puts them all into a list
-        unmatched_group.append(pairedlist)
-        pairedlist = []
-        selected_day = "" 
-    
-    return group_pref,pairedlist,selected_day
-
-
 def find_best_day(group_df):
     # Step 1: Get the days from the first row
     first_row_days = group_df['Availability'].iloc[0].split(';')
@@ -90,10 +49,3 @@ def find_best_day(group_df):
     return None
 
 
-
-
-def getInfo(result_list,unmatched_group):
-    print("RESULT LIST: ", result_list)
-    print("LENGTH OF RESULT: ", len(result_list))
-    print("UNMATCHED LIST: ",unmatched_group)
-    print("LENGTH OF UNMATCHED: ", len(unmatched_group))
