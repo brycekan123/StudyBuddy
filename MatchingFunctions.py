@@ -15,16 +15,16 @@ def exactMatch(group_pref_2,result_list):
 
 def find_best_day(group_df):
     # Step 1: Get the days from the first row
-    first_row_days = group_df['Availability'].iloc[0].split(';')
+    first_row_days = group_df['Availability'].iloc[0].split(',')
     first_row_days = [day.strip() for day in first_row_days if day]  # Clean up and ensure no empty days
     print("First row days:", first_row_days)
     
     # Step 2: Create a dictionary to count occurrences of the first row's days
     day_count = {day: 0 for day in first_row_days}  # Initialize with 0 for the first-row days
-    
+    print(day_count)
     # Step 3: Iterate over each row in the DataFrame
     for i in range(len(group_df)):
-        availability = group_df['Availability'].iloc[i].split(';')
+        availability = group_df['Availability'].iloc[i].split(',')
         #print("Available days:", availability)
         for day in availability:
             day = day.strip()  # Strip whitespace

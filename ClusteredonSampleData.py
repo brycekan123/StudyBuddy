@@ -12,13 +12,12 @@ class GroupMatcher:
         self.max_count = -1
         self.index_to_delete = -1
         self.definiteMatch = []
-
+        self.columnNames = self.data.columns.tolist()
     
     def process_group(self, groupsize):
         # Filter group based on size
-        group_pref = self.data.loc[self.data["Group Size Preference"] == groupsize].copy()
+        group_pref = self.data.loc[self.data["Group Size"] == groupsize].copy()
         group_pref.reset_index(drop=True, inplace=True)
-
         # Exact matching for group size 2
         if groupsize == 2:
             group_pref = MatchingFunctions.exactMatch(group_pref, self.result_list)
@@ -47,8 +46,8 @@ class GroupMatcher:
                         print("SELECTED_DAY", selected_day)
                         available_days_first = {selected_day}
                 else:
-                    available_days_first = set(day.strip() for day in first_row['Availability'].split(";"))
-                available_days_current = set(day.strip() for day in current_row['Availability'].split(";"))
+                    available_days_first = set(day.strip() for day in first_row['Availability'].split(","))
+                available_days_current = set(day.strip() for day in current_row['Availability'].split(","))
                 common_days = available_days_first.intersection(available_days_current)
                 # Use the commonCount method
                 if common_days:
@@ -107,26 +106,29 @@ class GroupMatcher:
         count = 0
         selected_day = random.choice(list(common_days))
         matched_criteria = []
-
-        if first_row['Preferred Language'] == current_row['Preferred Language']:
-            matched_criteria.append(first_row['Preferred Language'])
-            count += 1
-
-        if first_row['Completed Class'] == current_row['Completed Class']:
-            matched_criteria.append(first_row['Completed Class'])
-            count += 1
+        #add in which columns I want to use to match people with!
+        columns_to_match = ['Classes']
+        for column in columns_to_match:
+            splitfirst = first_row[column].split(',')
+            splitcurr = current_row[column].split(',')
+            for element in splitfirst:
+                if element in splitcurr:
+                    matched_criteria.append(element)
+                    count+=1
 
         if count > self.max_count:
             matched_criteria.append(selected_day)
             self.max_count = count
             self.index_to_delete = i
             self.definiteMatch = matched_criteria
-    #print("MAX",self.max_count,"INDEX",self.index_to_delete,"MATCHING CRITERIA",self.definiteMatch)
-    
+        print("MAX",self.max_count,"INDEX",self.index_to_delete,"MATCHING CRITERIA",self.definiteMatch)
 
     def getResultList(self):
         return self.result_list
     
     def getUnmatchedList(self):
         return self.unmatched_group
+    
+    def getColumnNames(self):
+        return self.columnNames
 

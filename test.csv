@@ -1,0 +1,10 @@
+﻿Name,Email,Classes,Availability,Group Size,Discord Username,FavColor
+person1,person1@usc.edu,"CSCI 102L: Fundamentals of Computation,CSCI 170: Discrete Methods in Computer Science",Wednesday,3,abc1,
+person2,person2@usc.edu,"CSCI 102L: Fundamentals of Computation,CSCI 170: Discrete Methods in Computer Science,CSCI 201: Principles of Software Development","Thursday,Tuesday",3,abc2,
+person3,person3@usc.edu,CSCI 201: Principles of Software Development,Thursday,3,abc3,
+M,m@usc.edu,"CSCI 201: Principles of Software Development,CSCI 103L: Introduction to Programming",Thursday,3,abc4,
+bryce,brycekan@usc.edu,"CSCI 102L: Fundamentals of Computation,CSCI 170: Discrete Methods in Computer Science","Monday,Wednesday",3,abc5,
+abcdef,abcdef,"CSCI 102L: Fundamentals of Computation,CSCI 170: Discrete Methods in Computer Science",Wednesday,3,abc6,
+lastgroup,lg@usc.edu,CSCI 450: Introduction to Computer Networks,Friday,3,abc7,
+lastgroup2,lg2@usc.edu,"CSCI 450: Introduction to Computer Networks,CSCI 270: Introduction to Algorithms and Theory of Computing","Friday,Sunday",3,abc8,
+lastgroup3,lg3@usc.edu,"CSCI 450: Introduction to Computer Networks,CSCI 467: Introduction to Machine Learning","Saturday,Friday",3,abc9,
