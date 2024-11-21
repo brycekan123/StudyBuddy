@@ -16,7 +16,7 @@ class GroupMatcher:
     
     def process_group(self, groupsize):
         # Filter group based on size
-        group_pref = self.data.loc[self.data["Group Size"] == groupsize].copy()
+        group_pref = self.data.loc[self.data["Group_Size"] == groupsize].copy()
         group_pref.reset_index(drop=True, inplace=True)
         # Exact matching for group size 2
         if groupsize == 2:
@@ -31,9 +31,9 @@ class GroupMatcher:
             first_row = group_pref.iloc[0]
             self.max_count = -1
             self.index_to_delete = -1
-            # Add email to a temp list
-            if first_row["Email"] not in self.paired_list:
-                self.paired_list.append(first_row["Email"])
+            # Add Discord_Username to a temp list
+            if first_row["Discord_Username"] not in self.paired_list:
+                self.paired_list.append(first_row["Discord_Username"])
             # Search for the best matching row
             for i in range(1, len(group_pref)):
                 current_row = group_pref.iloc[i]
@@ -55,7 +55,7 @@ class GroupMatcher:
             # Debugging best match result
             if self.index_to_delete != -1:
                 print(
-                    f"Matched: {first_row['Email']} with {group_pref.iloc[self.index_to_delete]['Email']} "
+                    f"Matched: {first_row['Discord_Username']} with {group_pref.iloc[self.index_to_delete]['Discord_Username']} "
                     f"on criteria: {self.definiteMatch}"
                 )
             # Check match conditions and finalize group
@@ -68,7 +68,7 @@ class GroupMatcher:
         #dropping the candidate from the dataframe
         if self.index_to_delete != -1 and len(self.paired_list)< groupsize:
             print("FoundMatch, templist < groupsize")
-            self.paired_list.append(group_pref.iloc[self.index_to_delete]['Email'])
+            self.paired_list.append(group_pref.iloc[self.index_to_delete]['Discord_Username'])
             group_pref = group_pref.drop([self.index_to_delete]).reset_index(drop=True)
             print("PairedList: ",self.paired_list)
         return group_pref
@@ -79,14 +79,13 @@ class GroupMatcher:
         if self.index_to_delete != -1 and len(self.paired_list)== groupsize:
             print("Match made: ",self.paired_list,self.definiteMatch)
             self.result_list.append([self.paired_list,self.definiteMatch])
-            #print("RESULT",result_list)
             group_pref = group_pref.drop([0]).reset_index(drop=True)
             #resetting for next iteration
             selected_day = "" 
             self.paired_list = []
         #this is the unmatched group
         if self.index_to_delete == -1:
-            print(first_row['Email'], "'s group is unmatched. Dropping both from dataframe")
+            print(first_row['Discord_Username'], "'s group is unmatched. Dropping both from dataframe")
             #dropping first row since there's no matches. Moving onto the next iteration
             group_pref = group_pref.drop([0]).reset_index(drop=True)
             print("Resetting pairedLists",self.paired_list)
@@ -107,8 +106,9 @@ class GroupMatcher:
         selected_day = random.choice(list(common_days))
         matched_criteria = []
         #add in which columns I want to use to match people with!
-        columns_to_match = ['Classes']
+        columns_to_match = ['Classes', 'Interests', 'Preferred_Locations']
         for column in columns_to_match:
+            print("column!",column)
             splitfirst = first_row[column].split(',')
             splitcurr = current_row[column].split(',')
             for element in splitfirst:
