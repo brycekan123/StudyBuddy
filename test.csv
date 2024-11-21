@@ -1,10 +1,11 @@
-﻿Name,Email,Classes,Availability,Group Size,Discord Username,FavColor
-person1,person1@usc.edu,"CSCI 102L: Fundamentals of Computation,CSCI 170: Discrete Methods in Computer Science",Wednesday,3,abc1,
-person2,person2@usc.edu,"CSCI 102L: Fundamentals of Computation,CSCI 170: Discrete Methods in Computer Science,CSCI 201: Principles of Software Development","Thursday,Tuesday",3,abc2,
-person3,person3@usc.edu,CSCI 201: Principles of Software Development,Thursday,3,abc3,
-M,m@usc.edu,"CSCI 201: Principles of Software Development,CSCI 103L: Introduction to Programming",Thursday,3,abc4,
-bryce,brycekan@usc.edu,"CSCI 102L: Fundamentals of Computation,CSCI 170: Discrete Methods in Computer Science","Monday,Wednesday",3,abc5,
-abcdef,abcdef,"CSCI 102L: Fundamentals of Computation,CSCI 170: Discrete Methods in Computer Science",Wednesday,3,abc6,
-lastgroup,lg@usc.edu,CSCI 450: Introduction to Computer Networks,Friday,3,abc7,
-lastgroup2,lg2@usc.edu,"CSCI 450: Introduction to Computer Networks,CSCI 270: Introduction to Algorithms and Theory of Computing","Friday,Sunday",3,abc8,
-lastgroup3,lg3@usc.edu,"CSCI 450: Introduction to Computer Networks,CSCI 467: Introduction to Machine Learning","Saturday,Friday",3,abc9,
+﻿Name,Email,Classes,Availability,Group_Size,Discord_Username,FavColor,Preferred Location,Preferred_Locations,Interests
+person1,person1@usc.edu,"CSCI 102L: Fundamentals of Computation,CSCI 170: Discrete Methods in Computer Science,CSCI 103L: Introduction to Programming","Wednesday,Saturday,Monday",3,abc1,,,"Salvatori Computer Science lab,Leavey Library","Software Dev.,Leetcode"
+person2,person2@usc.edu,"CSCI 102L: Fundamentals of Computation,CSCI 170: Discrete Methods in Computer Science,CSCI 201: Principles of Software Development","Thursday,Tuesday",3,abc2,,,"Salvatori Computer Science lab,Doheney Library","Leetcode"
+person3,person3@usc.edu,CSCI 201: Principles of Software Development,"Thursday,Tuesday,Monday",3,abc3,,,"Salvatori Computer Science lab,Doheney Library","Game Dev.,MLOps,Software Dev."
+M,m@usc.edu,"CSCI 201: Principles of Software Development,CSCI 103L: Introduction to Programming","Thursday,Wednesday,Sunday",3,abc4,,,"Salvatori Computer Science lab,Doheney Library","Software Dev.,Leetcode"
+bryce,brycekan@usc.edu,"CSCI 102L: Fundamentals of Computation,CSCI 170: Discrete Methods in Computer Science","Monday,Wednesday",3,abc5,,,"Salvatori Computer Science lab,Doheney Library","Game Dev.,MLOps,Software Dev."
+abcdef,abcdef,"CSCI 102L: Fundamentals of Computation,CSCI 170: Discrete Methods in Computer Science","Wednesday,Monday",3,abc6,,,"Salvatori Computer Science lab,Doheney Library","MLOps,Software Dev.,Leetcode"
+lastgroup,lg@usc.edu,CSCI 450: Introduction to Computer Networks,"Friday,Sunday",3,abc7,,,"Salvatori Computer Science lab,Doheney Library","Game Dev.,MLOps,Software Dev."
+lastgroup2,lg2@usc.edu,"CSCI 450: Introduction to Computer Networks,CSCI 270: Introduction to Algorithms and Theory of Computing","Friday,Sunday,Monday",3,abc8,,,"Salvatori Computer Science lab,Doheney Library","Game Dev.,MLOps,Software Dev."
+lastgroup3,lg3@usc.edu,"CSCI 450: Introduction to Computer Networks,CSCI 467: Introduction to Machine Learning","Saturday,Friday,Tuesday",3,abc9,,,"Leavey Library,Doheney Library","MLOps,Software Dev."
+test2,test2@usc.edu,CSCI 368: Cross-Platform App Development,"Monday,Friday",3,test2,,,Salvatori Computer Science lab,"AI,MLOps,Leetcode"

@@ -1,16 +1,17 @@
 import random
 
 def exactMatch(group_pref_2,result_list):
-    grouped = group_pref_2.groupby(['Availability', 'Preferred Language', 'Completed Class'])
+    #NEEDS TO CHANGE TO "AVAILABILITY" + all other columns I'm using.
+    grouped = group_pref_2.groupby(['Availability', 'Interests', 'Preferred_Locations'])
     for key, group in grouped:
-        listofemails = group['Email'].tolist()
-        if (len(listofemails)>1):
-            for i in range(len(listofemails)):
-                indices = group_pref_2.index[group_pref_2["Email"] == listofemails[i]].tolist()
+        listOfUsers = group['Discord_Username'].tolist()
+        if (len(listOfUsers)>1):
+            for i in range(len(listOfUsers)):
+                indices = group_pref_2.index[group_pref_2["Discord_Username"] == listOfUsers[i]].tolist()
                 for index in indices:
                     group_pref_2 = group_pref_2.drop(index).reset_index(drop=True)
             key = list(key)
-            result_list.append([listofemails,key])
+            result_list.append([listOfUsers,key])
     return group_pref_2
 
 def find_best_day(group_df):
