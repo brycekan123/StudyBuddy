@@ -3,8 +3,8 @@ Look no further :)
 # Study Buddy: Find someone to study with based on your similar backgrounds!
 
 I created an application for students to find other classmates to study with based on their similar backgrounds. Here is how it works.
-- 1st: each class will be provided a form for the students to fill out
-- 2nd: Individuals who want to participate will provide information such as how many people in their study group, availability, preferred location and even research interests.
+- 1st: each class will be provided a [form](https://airtable.com/app7s0IDdvLDs3Hwo/pagz52hHoU25j2eE3/form) for the students to fill out. Ex: 
+- 2nd: Individuals who want to participate will provide information such as how many people in their study group, availability, preferred location, research interests and more.
 - 3rd: after 48 hours, the form will close and I will run my custom matching algorithm(more explained below) to match people based on these preferences.
 - 4th: I'll automatically create a discord group with the matched individuals and provide them on what information they matched on.
 
